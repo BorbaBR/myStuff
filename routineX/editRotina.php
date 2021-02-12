@@ -38,10 +38,10 @@
 
         .containerRotina {
             display: block;
-            font-size: 20px;
-            width: 90%;
-            padding-top: 30px;
-            padding-bottom: 30px;
+            font-size: 18px;
+            width: 50%;
+            padding-top: 20px;
+            padding-bottom: 20px;
             background-color: cornsilk;
             margin: 0 auto;
             margin-bottom: 30px;
@@ -50,25 +50,29 @@
             border: solid gray 1px;
             border-radius: 20px;
             text-align: center;
+            min-width: 300px;
             max-width: 800px;
+            opacity: 0.93;            
         }
 
         /* TABELA AFAZERES */
 
         .afazeres {
             display: block;
-            background-color: rgb(129, 193, 214);
+            background-color: cornsilk;
             padding-top: 30px;
             padding-bottom: 30px;
             color: black;
             text-align: center;
-            width: 90%;
+            width: 50%;
             margin: 0 auto;
             -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 20px 19px rgba(0, 0, 0, 0.19);
             box-shadow: 0px 10px 13px -7px #000000, 0px 0px 20px 19px rgba(0, 0, 0, 0.19);
             border: solid gray 1px;
             border-radius: 20px;
+            min-width: 300px;
             max-width: 800px;
+            opacity: 0.93;
         }
 
         /* footer */
@@ -89,11 +93,12 @@
             color: black;
             background: white;
             text-align: center;
-            width: 90%;
+            width: 90%;            
         }
 
         .divTableRow {
-            display: table-row;
+            display: table-row; 
+            line-height: 15px;           
         }
 
         .divTableHeading {
@@ -104,11 +109,12 @@
 
         .divTableCell,
         .divTableHead {
+            
             display: table-cell;
-            padding: 5px;
+            padding: 4px; /* muda o tamanho dos blocos das colunas*/
             border: solid gray 1px;
         }
-
+       
         .divTableHeading {
             display: table-header-group;
         }
@@ -119,13 +125,13 @@
 
         .divTableBody {
             display: table-row-group;
+            line-height: 2px ;
         }
 
-        /* INPUT */
+        /* Input Bar */
 
         input[type=text] {
-            width: 90%; 
-            margin-bottom: 4px;           
+            width: 95%;                                   
         }
     </style>
 
@@ -141,9 +147,10 @@
 
         <!-- QUADRO ROTINA -->
         <div class="containerRotina">
-            <h1>CRIE SUA ROTINA!</h1>
+            <h1>RoutineX</h1>
+            <p>Insira os dados desejados, clique em salvar e baixe o arquivo em .pdf!</p>
             <br>
-            <!-- TESTE TABELA 1 -->
+
             <div class="divTable ">
                 <div class="divTableHeading">
                     <div class="divTableRow">
@@ -177,16 +184,15 @@
                                    
                 </div>
             </div>
-            <!-- tr = linha nova, th = table header, td =  -->
-
+            
             <!-- COMO FAZER PARA O USER SALVAR EM PDF APÓS FINALIZAR? -->
 
         </div>
         <div class="afazeres">
             <h1>Lista de Afazeres</h1>
-            <input type="text" style="display: inline-block;">
+            <input type="text" style="display: inline-block; width: 40%;">  <!-- O STYLE MUDA O BLOCO DE INPUT! -->
             <button onclick="botaoAdd()" style="display: inline-block;">Add</button>
-            <div id="linhaNova" style="padding: 15px; display: block; background-color: lightblue; margin-top: 10px;">
+            <div id="linhaNova" style="padding: 15px; display: block; margin-top: 10px;">
                 ahhaha
             </div>
         </div>
